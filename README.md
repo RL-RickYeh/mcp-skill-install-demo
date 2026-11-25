@@ -9,7 +9,12 @@
 
 ## 先安裝主 Plugin
 
-需要已安裝的 Node.js 與對應的 AI 工具。這是私有 repo，請用有讀取權限的 GitHub 帳號。在終端機執行 `gh repo clone renhaoyeh/mcp-skill-install-demo`，再進入 `mcp-skill-install-demo` 資料夾。以下指令都在這個資料夾執行。
+需要已安裝的 Node.js 與對應的 AI 工具。這是公開 repo，可直接使用 Git 下載。以下主 Plugin 指令都在下載後的資料夾執行。
+
+```shell
+git clone https://github.com/RL-RickYeh/mcp-skill-install-demo.git
+cd mcp-skill-install-demo
+```
 
 ### Codex
 
@@ -39,6 +44,12 @@ npx skills add ./library/skills --skill choose-demo-combo -a claude-code --copy
 ```
 
 開新 chat 後，Codex 用 `$choose-demo-combo`，Claude Code 用 `/choose-demo-combo`。例如輸入「用這個 Skill 幫我配一杯飲品和一份點心，共不超過 150 元」。冰美式與紅茶司康合計 145 元。
+
+也可以在想使用 Skill 的專案裡，直接從公開 GitHub 選裝。下方以 Codex 為例，Claude Code 將 `-a codex` 換成 `-a claude-code`。
+
+```shell
+npx skills add https://github.com/RL-RickYeh/mcp-skill-install-demo/tree/main/library/skills --skill choose-demo-combo -a codex --copy
+```
 
 ## 看原始檔
 

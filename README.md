@@ -31,11 +31,11 @@ claude plugin install demo-menu@mcp-skill-demo
 
 ## 再選裝「預算配餐」
 
-在 repo 根目錄執行對應的一行。選裝 Skill 需要 npm 自帶的 `npx`。指令把 Skill 加到目前的專案，主 Plugin 已提供 MCP 連線。
+在 repo 根目錄執行對應的一行。選裝 Skill 需要 Node.js 22.20 以上與 npm 自帶的 `npx`。指令會把 Skill 複製到目前的專案。
 
 ```shell
-npx skills add ./library/skills --skill choose-demo-combo -a codex
-npx skills add ./library/skills --skill choose-demo-combo -a claude-code
+npx skills add ./library/skills --skill choose-demo-combo -a codex --copy
+npx skills add ./library/skills --skill choose-demo-combo -a claude-code --copy
 ```
 
 開新 chat 後，Codex 用 `$choose-demo-combo`，Claude Code 用 `/choose-demo-combo`。例如輸入「用這個 Skill 幫我配一杯飲品和一份點心，共不超過 150 元」。冰美式與紅茶司康合計 145 元。

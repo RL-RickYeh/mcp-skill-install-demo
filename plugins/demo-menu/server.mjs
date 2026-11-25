@@ -35,7 +35,7 @@ for await (const line of createInterface({ input: process.stdin, crlfDelay: Infi
       const supported = ['2025-11-25', '2025-06-18', '2025-03-26', '2024-11-05'];
       reply(id, { result: {
         protocolVersion: supported.includes(params?.protocolVersion) ? params.protocolVersion : supported[0],
-        capabilities: { tools: {} },
+        capabilities: { tools: {}, resources: {} },
         serverInfo: { name: 'demo-menu', version: '1.0.0' },
       } });
       break;
@@ -45,6 +45,12 @@ for await (const line of createInterface({ input: process.stdin, crlfDelay: Infi
       break;
     case 'tools/list':
       reply(id, { result: { tools: [tool] } });
+      break;
+    case 'resources/list':
+      reply(id, { result: { resources: [] } });
+      break;
+    case 'resources/templates/list':
+      reply(id, { result: { resourceTemplates: [] } });
       break;
     case 'tools/call':
       if (params?.name === tool.name && Object.keys(params.arguments ?? {}).length === 0) {

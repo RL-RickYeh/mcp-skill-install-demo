@@ -1,0 +1,6 @@
+{
+  "name": "mcp-skill-demo",
+  "owner": { "name": "Demo maintainers" },
+  "metadata": { "description": "A fictional cafe demo for MCP and optional Skills." },
+  "plugins": [{ "name": "demo-menu", "source": "./plugins/demo-menu" }]
+}

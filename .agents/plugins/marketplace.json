@@ -1,0 +1,12 @@
+{
+  "name": "mcp-skill-demo",
+  "interface": { "displayName": "MCP & Skill Demo" },
+  "plugins": [
+    {
+      "name": "demo-menu",
+      "source": { "source": "local", "path": "./plugins/demo-menu" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

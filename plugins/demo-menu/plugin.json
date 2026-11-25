@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "demo-menu",
+  "version": "1.0.0",
+  "description": "Try MCP and a built-in Skill with a fictional cafe menu."
+}

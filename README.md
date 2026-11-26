@@ -2,6 +2,16 @@
 
 這是一間虛構的咖啡店。主 Plugin 讓 AI 查菜單，另外有一個可選裝的 Skill，教 AI 怎麼依預算配出一份餐點。範例使用本機 Node.js 執行，只讀取範例菜單。
 
+## 一句話安裝
+
+把下面這句貼到 **Codex** 或 **Claude Code**。它會先安裝主 Plugin、確認能查菜單，再問你要不要加裝「預算配餐」。
+
+```text
+請讀 https://raw.githubusercontent.com/RL-RickYeh/mcp-skill-install-demo/main/docs/install.md，依我現在用的工具安裝 Demo Menu MCP，確認能查菜單，再問我要不要加裝「預算配餐」Skill。
+```
+
+這個測試需要本機終端機、Git 和 Node.js。若工具跳出信任或執行確認，請依畫面操作。也可以直接看[給 agent 的安裝指引](docs/install.md)。
+
 | 你想做什麼 | 操作 | 可以在聊天裡說什麼 |
 | --- | --- | --- |
 | 先連上工具 | 裝 Demo Menu 主 Plugin | 「幫我列出測試咖啡店的菜單。」 |

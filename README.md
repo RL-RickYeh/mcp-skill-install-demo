@@ -35,6 +35,12 @@ claude plugin update demo-menu@mcp-skill-demo
 
 更新後，在 Claude Code 執行 `/reload-plugins` 或開新 session。
 
+## 遠端 MCP 版
+
+同一套菜單和 Skill 也可以透過 HTTPS 提供給 **ChatGPT 網頁版**和 **Claude Code**。使用者只要把部署後的 `/mcp` 網址加到自己的工具。Claude Code 可在 `/` 選單找遠端 server 的 `list-skills`。ChatGPT Work 可直接問有哪些 Skill。
+
+[看部署、兩個平台的連線測試和更新步驟](docs/remote.md)
+
 ## 先安裝主 Plugin
 
 需要已安裝的 Node.js 與對應的 AI 工具。這是公開 repo，可直接使用 Git 下載。以下主 Plugin 指令都在下載後的資料夾執行。

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "choose-demo-combo",
+    "title": "預算配餐",
+    "description": "依新台幣預算選一杯飲品和一份點心。",
+    "instructions": "---\nname: choose-demo-combo\ndescription: 使用者想用指定預算，在測試咖啡店選一杯飲品和一份點心時使用。\n---\n\n1. 確認新台幣預算。\n2. 呼叫 demo-menu MCP 的 list_demo_menu 取得菜單。\n3. 選一杯飲品和一份點心，列出總價且不超過預算。如果預算不足，說明最便宜的組合要多少錢。\n4. 若 MCP 尚未連上，請指出需要先安裝 Demo Menu 主 Plugin。\n"
+  }
+]
